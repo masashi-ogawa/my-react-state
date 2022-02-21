@@ -1,7 +1,9 @@
 import styled from 'styled-components';
+import { useContext } from 'react';
+import { AdminFlagContext } from './providers/AdminFlagProvider';
 
-export const EditButton = props => {
-  const { isAdmin } = props;
+export const EditButton = () => {
+  const { isAdmin } = useContext(AdminFlagContext);
 
   return (
     <SEditButton disabled={!isAdmin}>編集</SEditButton>

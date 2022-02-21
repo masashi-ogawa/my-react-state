@@ -1,13 +1,11 @@
 import styled from 'styled-components';
 import { EditButton } from './EditButton';
 
-export const Card = props => {
-  const { isAdmin } = props;
-
+export const Card = () => {
   return (
     <SDiv>
       <p>山田太郎</p>
-      <EditButton isAdmin={isAdmin} />
+      <EditButton />
     </SDiv>
   )
 };
